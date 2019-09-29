@@ -1,4 +1,5 @@
 import React from 'react';
+import DogIndexContainer from './index/dog_index_container'
 import {Switch, Route} from 'react-router-dom';
 
 const App = () => (
