@@ -9,7 +9,9 @@ const DogsReducer = (state = {}, action) => {
         case RECEIVE_DOGS:
             return action.dogs
         ;
-    }
-}
+        default:
+        return state;
+    };
+};
 
 export default DogsReducer;

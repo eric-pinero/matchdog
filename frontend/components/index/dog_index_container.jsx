@@ -4,6 +4,7 @@ import { requestDogs } from '../../actions/dog_actions';
 
 const msp = (state) => {
     const dogs = Object.values(state.entities.dogs);
+    debugger
     return{
         dogs,
     }
