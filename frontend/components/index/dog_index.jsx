@@ -1,19 +1,13 @@
-import React from 'react';
+import React, {setState, useEffect} from 'react';
 import DogIndexItem from './dog_index_item';
 import { Link } from 'react-router-dom';
 
-class DogIndex extends React.Component{
-    componentDidMount(){
-        this.props.requestDogs();
-    }
+const DogIndex = props => {
+    useEffect(() => {props.requestDogs()}, [])
 
-    render(){
-        const dogs = this.props.dogs[0] ? Object.keys(this.props.dogs[0]) : null
-        debugger
-        return(
-            <h1>{dogs}</h1>
-        )
-    }
+    const dogs = props.dogs[0] ? Object.keys(props.dogs[0]) : null
+    const dogIndex = <h1>{dogs}</h1>
+    return dogIndex;
 }
 
 export default DogIndex;
