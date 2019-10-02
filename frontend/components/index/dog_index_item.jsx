@@ -1,18 +1,13 @@
 import React from 'react';
 
-class DogIndexItem extends React.Component{
-    constructor(props){
-        super(props);
-    }
+const DogIndexItem = props => {
 
-    render(){
         
         return (
             <>
-            <h1>{this.props.dogs}</h1>
+            <li>{props.dog}</li>
             </>
         )
-    }
 }
 
 export default DogIndexItem
