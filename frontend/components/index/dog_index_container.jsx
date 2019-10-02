@@ -10,7 +10,6 @@ const msp = (state) => {
 }
 
 const mdp = (dispatch) => {
-    debugger
     return {
         requestDogs: () => dispatch(requestDogs()), 
     };

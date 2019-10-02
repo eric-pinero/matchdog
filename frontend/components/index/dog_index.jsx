@@ -8,7 +8,8 @@ class DogIndex extends React.Component{
     }
 
     render(){
-        const dogs = this.props.dogs
+        const dogs = this.props.dogs[0] ? Object.keys(this.props.dogs[0]) : null
+        debugger
         return(
             <h1>{dogs}</h1>
         )

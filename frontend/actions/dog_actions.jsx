@@ -18,9 +18,7 @@ const receiveErrors = (errors) => {
 };
 
 export const requestDogs = () => {
-    debugger
     return (dispatch) => {
-        debugger
         return APIUtil.fetchDogs().then(
             (dogs) => dispatch(receiveDogs(dogs)),
             response => dispatch(receiveErrors(response))
