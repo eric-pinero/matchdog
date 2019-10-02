@@ -4,13 +4,13 @@ import { requestDogs } from '../../actions/dog_actions';
 
 const msp = (state) => {
     const dogs = Object.values(state.entities.dogs);
-    debugger
     return{
         dogs,
     }
 }
 
 const mdp = (dispatch) => {
+    debugger
     return {
         requestDogs: () => dispatch(requestDogs), 
     };
